@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Hacks AdBlocker",
+    "description": "Hacks Youtube AdBlocker",
+    "version": "1.0",
+
+    "content_scripts": [{
+        "js": ["script.js"],
+        "run_at": "document_idle",
+        "matches": ["<all_urls>"]
+    }],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ]
+}
